@@ -11,17 +11,20 @@
 
 #container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 170px auto;
+    height: 100vh;
 }
 
 #container-user {
     background-color: var(--cor-01);
     color: var(--cor-02);
+    padding: 10px 0 0 10px;
 }
 
 #display-result {
     display: flex;
     flex-direction: column;
+    padding: 10px 0 0 10px;
 }
 
 ul {
