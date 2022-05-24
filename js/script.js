@@ -1,3 +1,5 @@
+const datas = document.querySelectorAll("#display-result p");
+
 const people = [
     {name:"Patrick Williams", street:"Dunedin", city:"Tasman", country:"Australia", telephone:"(813)6566128", birthday:"17/12/1982"},
     {name:"Sam Brady", street:"Cashel", city:"Monaghan", country:"Northern Ireland", telephone:"0616418290", birthday:"21/11/1981"},
