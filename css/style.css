@@ -27,6 +27,7 @@
 
 #container-user ul li:hover {
     cursor: pointer;
+    font-weight: 900;
 }
 
 #container-user ul li:first-child {
