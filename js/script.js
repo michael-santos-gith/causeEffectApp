@@ -12,16 +12,19 @@ const people = [
     {name:"Quim Rocha", street:"Fortaleza", city:"Roraima", country:"Brasil", telephone:"(83) 67170637", birthday:"13/11/1988"}
 ]
 
-users.forEach((currentValue, index) => {
-    if (index === 0) {
-        currentValue.addEventListener('click', () => {
-            datas[0].textContent = people[index].name;
-            datas[1].textContent = people[index].street;
-            datas[2].textContent = people[index].city;
-            datas[3].textContent = people[index].country;
-            datas[4].textContent = people[index].telephone;
-            datas[5].textContent = people[index].birthday;
-        })
-        
+function showUser(currentValue, index) {
+    currentValue.addEventListener('click', () => {
+        datas[0].textContent = people[index].name;
+        datas[1].textContent = people[index].street;
+        datas[2].textContent = people[index].city;
+        datas[3].textContent = people[index].country;
+        datas[4].textContent = people[index].telephone;
+        datas[5].textContent = people[index].birthday;
+    })
+}
+
+users.forEach((currentValue, index, array) => {
+    if (array[index] === currentValue) {
+        showUser(currentValue, index);
     }
 })
