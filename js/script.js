@@ -1,4 +1,5 @@
 const datas = document.querySelectorAll("#display-result p");
+const users = document.querySelectorAll("#container-user li");
 
 const people = [
     {name:"Patrick Williams", street:"Dunedin", city:"Tasman", country:"Australia", telephone:"(813)6566128", birthday:"17/12/1982"},
@@ -10,3 +11,17 @@ const people = [
     {name:"Oğuzhan Paksüt", street:"Eskişehir", city:"Sakarya", country:"Turkey", telephone:"(440)5422890", birthday:"03/01/1978"},
     {name:"Quim Rocha", street:"Fortaleza", city:"Roraima", country:"Brasil", telephone:"(83) 67170637", birthday:"13/11/1988"}
 ]
+
+users.forEach((currentValue, index) => {
+    if (index === 0) {
+        currentValue.addEventListener('click', () => {
+            datas[0].textContent = people[index].name;
+            datas[1].textContent = people[index].street;
+            datas[2].textContent = people[index].city;
+            datas[3].textContent = people[index].country;
+            datas[4].textContent = people[index].telephone;
+            datas[5].textContent = people[index].birthday;
+        })
+        
+    }
+})
