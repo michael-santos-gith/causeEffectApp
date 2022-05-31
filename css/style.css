@@ -43,3 +43,10 @@
 ul {
     list-style: none;
 }
+
+@media (min-width:768px) {
+    #container-user, #display-result {
+        padding: 20px 0 0 20px;
+        font-size: 18px;
+    }
+}
