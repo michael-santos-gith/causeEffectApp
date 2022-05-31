@@ -14,12 +14,18 @@ const people = [
 
 function showUser(currentValue, index) {
     currentValue.addEventListener('click', () => {
+        datas[0].style.display = "inline";
         datas[0].textContent = people[index].name;
         datas[1].textContent = people[index].street;
+        datas[1].style.display = "inline";
         datas[2].textContent = people[index].city;
+        datas[2].style.display = "inline";
         datas[3].textContent = people[index].country;
+        datas[3].style.display = "inline";
         datas[4].textContent = people[index].telephone;
+        datas[4].style.display = "inline";
         datas[5].textContent = people[index].birthday;
+        datas[5].style.display = "inline";
     })
 }
 

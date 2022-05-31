@@ -40,6 +40,13 @@
     padding: 10px 0 0 10px;
 }
 
+#display-result p {
+    display: none;
+    padding: 5px 0 5px 5px;
+    background-color: var(--cor-01);
+    color: var(--cor-02);
+}
+
 ul {
     list-style: none;
 }
